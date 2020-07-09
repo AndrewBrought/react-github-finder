@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from 'react';
-import Spinner from '../layout/spinner.gif';
+import Spinner from '../layout/Spinner';
 import Repos from '../repos/Repos';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
     useEffect(() => {
         getUser(match.params.login);
         getUserRepos(match.params.login);
-    //    eslint-disable-next-line
+        // eslint-disable-next-line
     }, []);
 
         const {
